@@ -1,0 +1,39 @@
+Q1 : WRITE A C++ PROGRAM THAT TAKES IN THE NUMBER AS INPUT AND PRINTS WHETHER NUMBER IS "ARMSTRONG" OR NOT .
+solution: 
+
+#include <iostream>
+using namespace std ;
+void armstrong() {
+
+	int v ;
+	int temp ;
+	int sum ;
+	int num ;
+	
+	cout << "Enter any number : " ;
+	cin >> num;
+	
+	temp=num ;
+	
+	cout << temp << endl ;
+	while (num != 0)
+	{
+
+	v=num%10 ;	
+	cout <<"v : "<< v <<endl;       // [ i use it to check whether i am getting correct values or not .]
+	sum= sum+ (v*v*v) ;
+	num=num/10 ; 
+
+	
+	}
+	cout << "answer: " << sum <<endl;
+	if (sum!=temp) {
+		cout << "THIS IS [NOT]  AN ARMSTRONG NUMBER ." ;
+	}
+	else {cout << "THE NUMBER IS AN ARMSTRONG " ;
+	}
+}
+
+int main () {
+	armstrong() ;
+}
