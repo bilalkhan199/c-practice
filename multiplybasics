@@ -1,0 +1,23 @@
+Q : Write a program that will ask user number of times for multiplication and then multiply it . [use for or while loops]
+solution :
+
+#include <iostream> 
+using namespace std ;
+
+int main() {
+	int a ;
+	int b ;
+	int c=1 ;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+//	int temp ;
+	cout << "enter number of times : " ;
+	cin >>  a ;
+	
+	for (int i = 0 ; i < a ; i++) 
+	{
+		cout << "Enter numbers : " ;
+		cin >>b ;
+		c=b*c ;
+	}
+	
+	cout << "answer : " << c ;
+}
