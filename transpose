@@ -1,0 +1,32 @@
+#include <iostream> 
+using namespace std;
+
+int main() {
+	int l ;
+	cout << "Enter : " ;   
+	cin >> l ;							//getting length of matrix ..
+	int a[l][l] ;
+	int count=1 ;
+
+	
+	for (int i=0 ; i<l ;i++) 				//loop for getting values
+	{
+		for (int j=0 ; j<l ; j++) 
+		{
+			a[i][j] = count ;
+			count++ ;
+			cout << a[i][j] <<" ";
+		}
+		cout <<endl ;
+		
+	}
+	cout << "transpose :  " <<endl ;
+			for (int k=0 ; k<l ;k++)                 //changing values here :
+			{	
+				for (int m=0 ; m<l ; m++)
+				{	cout << a[m][k] << " " ;
+				}
+					cout <<endl ;
+					
+			}
+}
