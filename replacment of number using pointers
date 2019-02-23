@@ -1,0 +1,30 @@
+Q : REPLACING OF NUMBERS  .
+YOU WILL GIVE THREE NUMBERS IN CONSOLE LIKE 4 , 5 , 6 AND OUTPUT WILL BE 6,5,4
+
+
+#include <iostream>
+using namespace std ;
+int main () {
+	int a ,b,c ;
+	
+	int *p,*q,*r  ; 
+	p= &c ;
+	q= &b ;
+	r= &a ;
+	
+	cout << "enter first value : " ;
+	cin >> a;
+	cout << "enter 2nd value : " ;
+	cin >> b;
+	cout << "enter 3rd value : ";
+	cin >> c ;
+	
+	
+	
+	
+	cout << "after replacment : " ;
+	cout << endl;
+	cout <<"value of "<<a<<" is : " << *p <<endl;
+	cout <<"value of "<<b<<" is : " << *q <<endl;
+	cout <<"value of "<<c<<" is : " << *r <<endl;
+}
