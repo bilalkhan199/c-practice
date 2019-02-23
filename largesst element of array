@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std ;
+
+
+int main ()
+ {
+ 	int kabu[] {5,99,8,66,10} ;         //you can also take input from user here ..
+	int c ;
+	int l = sizeof kabu ;
+//	cout << l << endl ;
+	c= l / sizeof kabu[0] ;
+//	cout << "c : " <<c ;
+
+	for (int i=0 ; i<c ; i++)
+	{
+		if (kabu[0] < kabu[i])
+		{
+			kabu[0] = kabu[i];
+		}
+	}
+	cout <<"largest element : "  kabu[0] ;
+	
+}
+ }
