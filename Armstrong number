@@ -1,5 +1,4 @@
-Q1 : WRITE A C++ PROGRAM THAT TAKES IN THE NUMBER AS INPUT AND PRINTS WHETHER NUMBER IS "ARMSTRONG" OR NOT .
-solution: 
+//Armstrong number checker
 
 #include <iostream>
 using namespace std ;
