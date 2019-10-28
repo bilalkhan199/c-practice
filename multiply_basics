@@ -1,6 +1,3 @@
-Q : Write a program that will ask user number of times for multiplication and then multiply it . [use for or while loops]
-solution :
-
 #include <iostream> 
 using namespace std ;
 
