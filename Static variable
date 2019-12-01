@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int st_function(){
+
+	static int i=0;
+	for (int k=0;k<3;k++)
+	{
+		i++;
+	}
+	return i;
+}
+
+int main(){
+	cout<<st_function();
+  cout<<st_function();
+  return 0;
+}
