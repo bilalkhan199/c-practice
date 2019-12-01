@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+class polymorphism
+{	
+	public:
+	virtual	void function()
+	{
+	  cout<<"In polymorphism class"<<endl;
+	}
+};
+
+class second:public polymorphism
+{
+	public:
+	void function()
+  {
+	  cout<<"In second class";
+	}
+};
+class third:public polymorphism
+{
+	public:
+	void function()
+  {
+	  cout<<"In third class";
+	}
+};
+
+
+
+int main()
+{
+  polymorphism *ptr; 
+  polymorphism alpha;
+  second beta;
+  
+  ptr=&alpha;
+  ptr->function();
+  
+  ptr=&beta;
+  ptr->function();
+}
